@@ -7,46 +7,81 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 </head>
-<body>
+<body style="background-image: url(images/white_carbonfiber/white_carbonfiber_@2X.png)">
     <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Phillip Merriman</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+        <h1 class="text-light">Phillip Merriman</h1>
+        <!-- <a class="navbar-brand text-white" href="#">Phillip Merriman</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-center text-light font-weight-bold" href="#">About <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link text-light" href="#">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link text-light" href="#">Contact</a>
             </li>
             
         </div>
+        
     </nav>
-
+    <!-- example 6 - center on mobile -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+            <a class="navbar-brand d-none d-lg-inline-block" href="#">
+                <h1>Phillip Merriman</h1>
+            </a>
+            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+                <img src="//placehold.it/40?text=LOGO" alt="logo">
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item nav-active">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <!-- main container -->
-    <div class="container" style="background-color: aquamarine;">
+    <div class="container bg-light mt-3">
         <!-- first row -->
         <div class="row">
             <!-- first column -->
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <div class="row">
-                    <div class="col-md-12" style="background-color: red;">
+                    <div class="col-md-12 mt-3">
                         <h1>About Me</h1>
                         <hr>
                     </div>
                     <!-- second column -->
-                    <div class="col-md-3" style="background-color: blue;">
-                        <img src="https://via.placeholder.com/200" alt="Picture of Phillip Merriman">
+                    <div class="col-md-3">
+                        <img src="images\IMG_42432.png" class="img-fluid pb-3" alt="Picture of Phillip Merriman">
                     <!-- end of second column -->
                     </div>
-                    <div class="col-md-9" style="background-color: beige;">
+                    <div class="col-md-8">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum, magna a ultricies eleifend, neque elit imperdiet nisl, vitae mattis lectus massa quis felis. Nunc nec nulla egestas, maximus diam eget, sodales justo. Phasellus volutpat nisl eget ante finibus, quis feugiat lacus mollis. Praesent in mi semper, feugiat nisi a, suscipit urna. Sed blandit elit sit amet justo semper dignissim. Donec quis ornare urna. Phasellus id ornare mi, vitae tincidunt tellus. Nullam non congue dui, eget sollicitudin urna. Nam ac nisl sagittis, vulputate metus sed, porttitor tortor. Pellentesque finibus egestas sapien, vitae efficitur leo tincidunt a. Praesent nec hendrerit tellus. Vestibulum erat velit, ultricies non arcu vel, lacinia malesuada felis.
+                        </p>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum, magna a ultricies eleifend, neque elit imperdiet nisl, vitae mattis lectus massa quis felis. Nunc nec nulla egestas, maximus diam eget, sodales justo. Phasellus volutpat nisl eget ante finibus, quis feugiat lacus mollis. Praesent in mi semper, feugiat nisi a, suscipit urna. Sed blandit elit sit amet justo semper dignissim. Donec quis ornare urna. Phasellus id ornare mi, vitae tincidunt tellus. Nullam non congue dui, eget sollicitudin urna. Nam ac nisl sagittis, vulputate metus sed, porttitor tortor. Pellentesque finibus egestas sapien, vitae efficitur leo tincidunt a. Praesent nec hendrerit tellus. Vestibulum erat velit, ultricies non arcu vel, lacinia malesuada felis.
                         </p>
@@ -54,15 +89,15 @@
                 </div>
             <!-- end of first column -->
             </div>
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <p></p>
-            </div>
+            </div> -->
             <!-- end first row -->
         </div>
         
     <!-- end main container -->
     </div>
 
-    <footer style="background-color: brown; text-align: center; position: fixed; bottom: 0; left: 0; right: 0; height: 30px;">© Phillip Merriman</footer>
+    <footer class="bg-dark text-light" style="text-align: center; position: fixed; bottom: 0; left: 0; right: 0; height: 30px; padding-top: 2px;">© Phillip Merriman</footer>
 </body>
 </html>
