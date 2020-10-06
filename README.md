@@ -21,7 +21,7 @@ Ex. -
 - [Electron](https://electron.atom.io)
 
 ## Credits
-Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project. 
+Contact form template taken from https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form 
 
 #### Anything else that seems useful
 
