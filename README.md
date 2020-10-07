@@ -13,9 +13,4 @@ Initial build
 ## Credits
 Contact form template taken from https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form 
 
-#### Anything else that seems useful
-
-## License
-A short snippet describing the license (MIT, Apache etc)
-
 © [Phillip Merriman](github.com/phillipmerriman)
