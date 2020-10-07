@@ -6,8 +6,6 @@ This portfolio is created to provide tangible proof of my value in the workplace
 
 ## Build status
 Initial build
-
-![Build Status](https://github.com/phillipmerriman/responsive-portfolio-with-bootstrap)(https://phillipmerriman.github.io/responsive-portfolio-with-bootstrap/)
  
 ## Screenshots
 ![Screenshot of About page](images/screenshot_index.html.png)
