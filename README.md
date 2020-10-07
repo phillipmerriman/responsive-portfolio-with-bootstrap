@@ -8,6 +8,7 @@ This portfolio is created to provide tangible proof of my value in the workplace
 Initial build
 
 [![Build Status](https://github.com/phillipmerriman/responsive-portfolio-with-bootstrap)](https://phillipmerriman.github.io/responsive-portfolio-with-bootstrap/)
+[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
  
 ## Screenshots
 ![Screenshot of About page](images/screenshot_index.html.png)
@@ -20,4 +21,4 @@ Contact form template taken from https://bootstrapious.com/p/how-to-build-a-work
 ## License
 A short snippet describing the license (MIT, Apache etc)
 
-© [Phillip Merriman](phillipmerriman.github.io)
+© [Phillip Merriman](github.com/phillipmerriman)
