@@ -7,8 +7,7 @@ This portfolio is created to provide tangible proof of my value in the workplace
 ## Build status
 Initial build
 
-[![Build Status](https://github.com/phillipmerriman/responsive-portfolio-with-bootstrap)](https://phillipmerriman.github.io/responsive-portfolio-with-bootstrap/)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
+![Build Status](https://github.com/phillipmerriman/responsive-portfolio-with-bootstrap)(https://phillipmerriman.github.io/responsive-portfolio-with-bootstrap/)
  
 ## Screenshots
 ![Screenshot of About page](images/screenshot_index.html.png)
