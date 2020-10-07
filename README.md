@@ -5,20 +5,12 @@ This portfolio will serve as a continuous project throughout my career, a centra
 This portfolio is created to provide tangible proof of my value in the workplace. By outlining project descriptions and showcasing work samples, providing quick and easy access to my resume, and offering up letters of reference, this portfolio will document my professional accomplishments in a way that makes sense for the job and career I am pursuing.
 
 ## Build status
-Build status of continus integration i.e. travis, appveyor etc. Ex. - 
 Initial build
 
-[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
+[![Build Status](https://github.com/phillipmerriman/responsive-portfolio-with-bootstrap)](https://phillipmerriman.github.io/responsive-portfolio-with-bootstrap/)
  
 ## Screenshots
-Include logo/demo screenshot etc.
-
-## Tech/framework used
-Ex. -
-
-<b>Built with</b>
-- [Electron](https://electron.atom.io)
+![Screenshot of About page](images/screenshot_index.html.png)
 
 ## Credits
 Contact form template taken from https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form 
@@ -28,4 +20,4 @@ Contact form template taken from https://bootstrapious.com/p/how-to-build-a-work
 ## License
 A short snippet describing the license (MIT, Apache etc)
 
-MIT © [Yourname]()
+© [Phillip Merriman](phillipmerriman.github.io)
