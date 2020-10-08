@@ -40,13 +40,14 @@
     <div class="container bg-light mt-3 rounded">
         <!-- container header -->
         <h1>Contact</h1>
-        <!-- email form placeholder -->
+        <!-- email form -->
         <form id="contact-form" method="post" action="contact.php" role="form">
 
             <div class="messages"></div>
 
             <div class="controls">
 
+                <!-- name row -->
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -63,6 +64,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- email row -->
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -71,6 +74,7 @@
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
+                    <!-- dropdown -->
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="form_need">Please specify your need *</label>
@@ -85,6 +89,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- message row -->
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
@@ -93,10 +99,13 @@
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
+                    <!-- submit button -->
                     <div class="col-md-12">
                         <input type="submit" class="btn btn-success btn-send" value="Send message">
                     </div>
                 </div>
+
+                <!-- special msg row -->
                 <div class="row">
                     <div class="col-md-12">
                         <p class="text-muted">
@@ -109,9 +118,12 @@
         </form>
     </div>
 
+    <!-- Footer (not sticky yet) -->
     <div style="height: 100px;">
         <footer class="bg-dark text-light" style="text-align: center; position: fixed; bottom: 0; left: 0; right: 0; height: 60px; line-height: 60px; padding-top: 2px;">© Phillip Merriman</footer>
     </div>
+
+    <!-- Links to bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
