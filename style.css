@@ -1,0 +1,22 @@
+body {
+    
+}
+
+#footer {
+    text-align: center; 
+    margin-top: 2%; 
+    padding-top: 2px;
+    padding-bottom: 70px; 
+    position: relative; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    height: 60px; 
+    line-height: 60px; 
+}
+
+@media screen and (max-width: 766px) {
+    #footer {
+        padding-bottom: 200px;
+    }
+  }
