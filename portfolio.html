@@ -5,7 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script>
+      $(document).ready(function(){
+          // Add minus icon for collapse element which is open by default
+          $(".collapse.show").each(function(){
+            $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+          });
+          
+          // Toggle plus minus icon on show hide of collapse element
+          $(".collapse").on('show.bs.collapse', function(){
+            $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+          }).on('hide.bs.collapse', function(){
+            $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+          });
+      });
+    </script>
 
 </head>
 <body style="background-image: url(images/white_carbonfiber/white_carbonfiber_@2X.png)">
@@ -47,61 +63,119 @@
 
         <!-- Main Row -->
         <div class="row">
-            <!-- Main Column -->
-            <div class="col-md-12 rounded">
-                <h1>Portfolio</h1>
+          <!-- Main Column -->
+          <div class="col-md-12 rounded">
+            <h1>Portfolio</h1>
+            
+            <!-- horizontal ruler -->
+            <hr>
+            
+                <!-- Accordion -->
+                <div class="bs-example">
+                  <div class="accordion" id="accordionExample">
+                      <!-- Project 1 -->
+                      <div class="card">
+                          <div class="card-header" id="headingOne">
+                              <h2 class="mb-0">
+                                  <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i> ORBIT</button>									
+                              </h2>
+                          </div>
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                              <div class="card-body">
+                                  <p>Orbit is here to help you gravitate towards clubs and organizations in your area and beyond. All groups and events on our page provide virtual and spaced out gatherings to make sure our users stay healthy. Its deployed right <a href="https://wereinorbit.herokuapp.com/" target="_blank">here.</a></p>
+                                  <p>
+                                    <a href="https://github.com/phillipmerriman/orbit" target="_blank">Orbit GitHub repo</a>
+                                  </p>
+                                  <img class="mx-auto img-fluid mb-3 rounded" src="images/orbit-1.PNG" alt="orbit">
+                              </div>
+                          </div>
+                      </div>
 
+                      <!-- Project 2 -->
+                      <div class="card">
+                          <div class="card-header" id="headingTwo">
+                              <h2 class="mb-0">
+                                  <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo">BURGER DEVOURER</button>
+                              </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                              <div class="card-body">
+                                  <p>This application allows you to see the burgers, add new burgers, devour the burgers, and delete the devoured burgers using Node.js,    Express, Express-Handlebars, and MySQL. Its deployed right <a href="https://cryptic-brushlands-50652.herokuapp.com/" target="_blank">here.</a>
+                                  </p>
+                                  <p>
+                                    <a href="https://github.com/phillipmerriman/Weather-Dashboard-1" target="_blank">Weather Dashboard GitHub repo</a>
+                                  </p>
+                                  <img class="mx-auto img-fluid mb-3 rounded" src="images/burger-app-screenshot.PNG" alt="burger-app">
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Project 3 -->
+                      <div class="card">
+                          <div class="card-header" id="headingThree">
+                              <h2 class="mb-0">
+                                  <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree">WEATHER DASHBOARD</button>                     
+                              </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <p>
+                                  Did you ever wonder what the weather was outside? I know I did. And by golly, I didnt have a way to find out! My house had no windows to see outside, no doors to open which I could poke my head out of and have a sniff of the air. So, I decided to make an app to do all this for me. Now, I can simply search for a city, and voila! I know the weather of whichever city I want! You can set about a better, more weather-conscious life <a href="https://phillipmerriman.github.io/Day-Planner-1/" target="_blank">here!</a>
+                                </p>
+                                <p>
+                                  <a href="https://github.com/phillipmerriman/Weather-Dashboard-1" target="_blank">Weather Dashboard GitHub repo</a>
+                                </p>
+                                <img class="mx-auto img-fluid mb-3 rounded" src="images\weather-dashboard.png" alt="weather-dashboard">
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Project 4 -->
+                      <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour">DAY PLANNER</button>                     
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <p>
+                                Most people aren't as organized as they seem. They use planners to help stay organized. This is just that. An hourly planner for the work day! Now, the only thing you need to remember to do, is create your to do's first thing when you get to the office! You can start a better, more organized life <a href="https://phillipmerriman.github.io/Day-Planner-1/" target="_blank">here.</a>
+                              </p>
+                              <p>
+                                <a href="https://github.com/phillipmerriman/Day-Planner-1" target="_blank">Day Planner GitHub repo</a>
+                              </p>
+                              <img class="mx-auto img-fluid mb-3 rounded" src="images\work-day-scheduler-1.png" alt="work-day-scheduler">
+                            </div>
+                        </div>
+                      </div>
+
+                      <!-- Project 5 -->
+                      <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive">WORD CONNECTIONS</button>                     
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <img class="mx-auto img-fluid mb-3 rounded" src="images\word-connections-1.png" alt="word-connections">
+                              <p>
+                                The purpose of this app is to go above and beyond a boring old dictionary and give people more than just a definition for the word they are trying to learn. With Word Connections, you can search for a word, and get the definition, as well as a youtube search regarding the word, and a fun little gif!!! You can begin a better, more learned life <a href="https://phillipmerriman.github.io/Day-Planner-1/" target="_blank">here.</a>
+                              </p>
+                              <p>
+                                <a href="https://github.com/phillipmerriman/Word-Connections" target="_blank">Word Connections GitHub repo</a>
+                              </p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
                 <!-- horizontal ruler -->
                 <hr>
-
                 <!-- Inner Row -->
                 <div class="row">
-                    <!-- Inner Column 1 -->
-                    <div class="col-md-6">
-                      <img class="mx-auto img-fluid mb-3 rounded" src="images/orbit-1.PNG" alt="orbit">
-                        <p>
-                          Orbit is here to help you gravitate towards clubs and organizations in your area and beyond. All groups and events on our page provide virtual and spaced out gatherings to make sure our users stay healthy. Its deployed right <a href="https://wereinorbit.herokuapp.com/" target="_blank">here.</a>
-                        </p>
-                        <p>
-                          <a href="https://github.com/phillipmerriman/orbit" target="_blank">Orbit GitHub repo</a>
-                        </p>
-                        
-                        <img class="mx-auto img-fluid mb-3 rounded" src="images\weather-dashboard.png" alt="weather-dashboard">
-                        <p>
-                          Did you ever wonder what the weather was outside? I know I did. And by golly, I didnt have a way to find out! My house had no windows to see outside, no doors to open which I could poke my head out of and have a sniff of the air. So, I decided to make an app to do all this for me. Now, I can simply search for a city, and voila! I know the weather of whichever city I want! You can set about a better, more weather-conscious life <a href="https://phillipmerriman.github.io/Day-Planner-1/" target="_blank">here!</a>
-                        </p>
-                        <p>
-                          <a href="https://github.com/phillipmerriman/Weather-Dashboard-1" target="_blank">Weather Dashboard GitHub repo</a>
-                        </p>
-                        <img class="mx-auto img-fluid mb-3 rounded" src="images\word-connections-1.png" alt="word-connections">
-                        <p>
-                          The purpose of this app is to go above and beyond a boring old dictionary and give people more than just a definition for the word they are trying to learn. With Word Connections, you can search for a word, and get the definition, as well as a youtube search regarding the word, and a fun little gif!!! You can begin a better, more learned life <a href="https://phillipmerriman.github.io/Day-Planner-1/" target="_blank">here.</a>
-                        </p>
-                        <p>
-                          <a href="https://github.com/phillipmerriman/Word-Connections" target="_blank">Word Connections GitHub repo</a>
-                        </p>
-                    <!-- end inner column 1 -->
-                    </div>
                     
-                    <!-- Inner Column 2 -->
-                    <div class="col-md-6">
-                      <img class="mx-auto img-fluid mb-3 rounded" src="images/burger-app-screenshot.PNG" alt="burger-app">
-                        <p>
-                          This live application allows you to see the burgers, add new burgers, devour the burgers, and delete the devoured burgers using Node.js, Express, Express-Handlebars, and MySQL. Its deployed right <a href="https://cryptic-brushlands-50652.herokuapp.com/" target="_blank">here.</a>
-                        </p>
-                        <p>
-                          <a href="https://github.com/phillipmerriman/burgerapp" target="_blank">Eat Da Burger! GitHub repo</a>
-                        </p>
-                        <img class="mx-auto img-fluid mb-3 rounded" src="images\work-day-scheduler-1.png" alt="work-day-scheduler">
-                        <p>
-                          Most people aren't as organized as they seem. They use planners to help stay organized. This is just that. An hourly planner for the work day! Now, the only thing you need to remember to do, is create your to do's first thing when you get to the office! You can start a better, more organized life <a href="https://phillipmerriman.github.io/Day-Planner-1/" target="_blank">here.</a>
-                        </p>
-                        <p>
-                          <a href="https://github.com/phillipmerriman/Day-Planner-1" target="_blank">Day Planner GitHub repo</a>
-                        </p>
-                        
-                    <!-- end inner column 2 -->
-                    </div>
                 <!-- end inner row -->
                 </div>
             <!-- end main column -->

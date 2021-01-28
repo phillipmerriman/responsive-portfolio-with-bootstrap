@@ -36,5 +36,6 @@ body {
     .footer {
         margin-top: 2%;
         padding-bottom: 200px;
+        position: bottom;
     }
   }
